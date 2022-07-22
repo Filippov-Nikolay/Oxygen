@@ -21,6 +21,10 @@
         /* background-color: purple; */
 	}
 
+	/* Header */
+	.header__wrpapper {
+		padding: 15px 0;
+	}
 	.menu-header {
 		display: none;
 		animation: showMenu .5s ease;
