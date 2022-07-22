@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('slick.css'); /* Plugin - slick */
+@import url('normalize.css');
+@import url('header.css');
+@import url('section.css');
+@import url('footer.css');
+@import url('mobile.css');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1335px;
+}

@@ -1,0 +1,129 @@
+.header {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.header__wrpapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 40px 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+}
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* .logo {
+    
+} */
+.header__logo {
+    width: 42px;
+    height: 42px;
+}
+.menu {
+    display: flex;
+    column-gap: 50px;
+}
+.menu__item {
+    padding-bottom: 10px;
+    width: fit-content;
+    border-bottom: 2px solid #fcbb0800;
+    transition: all .7s ease;
+}
+.menu__item--active {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #FCBB08;
+}
+/* .menu__item--active::after {
+    content: '';
+    display: inline-block;
+    margin-top: 10px;
+    width: 100%;
+    border-bottom: 2px solid #FCBB08;
+} */
+.menu__link {
+    position: relative;
+    font-size: 12px;
+    color: #373A39;
+    transition: all .5s ease;
+}
+.menu__link:hover {
+    color: #FCBB08;
+}
+.burger-btn {
+    display: none;
+    flex-direction: column;
+    row-gap: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+.burger-btn__span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+}
+
+.header__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('../img/header/header-bg.png') no-repeat center top/cover;
+    color: #fff;
+}
+.header__title {
+    font-size: 100px;
+}
+.header__subtitle {
+    padding-top: 20px;
+    font-size: 16px;
+    color: #FCBB08;
+}
+.header__decor {
+    position: absolute;
+    bottom: 60px;
+    width: 25px;
+    height: 45px;
+    border: 2px solid #FFFFFF;
+    border-radius: 100px;
+}
+.header__decor::after {
+    content: '';
+    display: block;
+    margin: 5px auto 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: downAndUp .5s ease;
+}
+
+.header__decor:hover::after {
+    animation: downAndUp .5s ease;
+    animation-iteration-count: 1;
+}
+
+@keyframes downAndUp {
+    0% {
+        margin: 5px auto 0;
+    }
+    50% {
+        margin: 15px auto 0;
+    }
+    100% {
+        margin: 5px auto 0;
+    }
+}
+@keyframes showMenu {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
